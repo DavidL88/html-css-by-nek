@@ -32,7 +32,7 @@
 
 body {
     color: #212121;
-    font-family: charter;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -72,4 +72,33 @@ h3 {
 
 p {
     color: #424242;
+}
+
+pre {
+    background:#FEC62E;
+}
+
+.hero {
+    background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0), transparent 43.49%), url('../img/patron-1.png');
+    height: 350px;
+}
+
+::selection {
+    background: yellow;
+}
+
+.section-content h3 {
+    counter-reset: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal);
+}
+
+.section-content h3::after {
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: #424242;;
+    display:inline-block
 }
