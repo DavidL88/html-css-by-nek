@@ -57,6 +57,7 @@ hr {
 header {
     font-size: 14px;
     color:#616161;
+    position:relative;
 }
 
 header a {
@@ -84,6 +85,9 @@ h3 {
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
+    position:sticky;
+    background: white;
+    top: 0;
 }
 
 p {
@@ -131,6 +135,7 @@ main {
 .section-content {
     margin-top: 164px;
     counter-reset: titleList;
+    position: relative;
 }
 
 .section-content:first-of-type {
@@ -162,6 +167,9 @@ main {
     content: '';
     width: 32px;
     height: 4px;
-    background: #424242;;
-    display:inline-block
+    background: #424242;
+    display:inline-block;
+    position:absolute;
+    left: 0;
+    bottom: 0;
 }
