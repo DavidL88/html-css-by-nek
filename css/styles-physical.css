@@ -30,6 +30,10 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #212121;
     font-family: 'Roboto', sans-serif;
@@ -44,6 +48,7 @@ h1 {
     font-size: 60px;
     margin-top: 64px;
     margin-bottom: 16px;
+    font-weight: normal;
 }
 
 h1 ~ p {
@@ -57,7 +62,20 @@ hr {
 header {
     font-size: 14px;
     color:#616161;
-    position:relative;
+    position:absolute;
+    width: 188px;
+    top: 64px;
+    left: -232px;
+    z-index: 1;
+}
+
+header li {
+    margin-bottom: 16px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
 }
 
 header a {
@@ -70,7 +88,8 @@ header a:hover {
 }
 
 nav details summary {
-    font-weight: bold
+    font-weight: bold;
+    line-height: 24px;
 }
 
 h2 {
@@ -118,9 +137,13 @@ blockquote span::before {
     content: '-';
 }
  
-main {
+.wrapper {
     width: 902px;
     margin: auto;
+}
+
+.header-content {
+    position: relative;
 }
 
 .hero {
@@ -156,7 +179,7 @@ main {
 
 .section-content h3 {
     counter-increment: titleList;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -165,7 +188,7 @@ main {
 
 .section-content h3::after {
     content: '';
-    width: 32px;
+    width: 55px;
     height: 4px;
     background: #424242;
     display:inline-block;
